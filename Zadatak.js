@@ -1,8 +1,8 @@
 
-var aktivneVrsteZadataka=[1,2,3,4,5,6,7,8,9,10];
+var aktivneVrsteZadataka=[1,2,5,6,7];
 var MOD=100;
 
-var rezultat;
+var rezultat,indeksVrsteZadatka=-1;
 rezultat=new Array(100);
 for(var i=0;i<=99;i++)rezultat[i]=0;
 povecajRezultat(1,0);
@@ -31,20 +31,21 @@ document.addEventListener('keydown', function(event){
     if(event.keyCode == 13 )Provera();
   })
 function GenerisiZadatak(){
-    
-    if(trenVrstaZadatka==0) trenZadatak=ZadatakSabiranje();
-    else if(trenVrstaZadatka==1) trenZadatak=ZadatakOduzimanje();
-    else if(trenVrstaZadatka==2) trenZadatak=ZadatakMnozenje();
-    else if(trenVrstaZadatka==3) trenZadatak=ZadatakDeljenje();
-    else if(trenVrstaZadatka==4) trenZadatak=ZadatakNepSabirak();
-    else if(trenVrstaZadatka==5) trenZadatak=ZadatakNepUmanjenik();
-    else if(trenVrstaZadatka==6) trenZadatak=ZadatakNepUmanjilac();
-    else if(trenVrstaZadatka==7) trenZadatak=ZadatakNepCinilac();
-    else if(trenVrstaZadatka==8) trenZadatak=ZadatakDeljenik();
-    else if(trenVrstaZadatka==9) trenZadatak=ZadatakDelilac();
-    trenVrstaZadatka++;
-    if(trenVrstaZadatka>=aktivneVrsteZadataka.length)trenVrstaZadatka=0;
+    indeksVrsteZadatka++;
+    if(indeksVrsteZadatka>=aktivneVrsteZadataka.length)indeksVrsteZadatka=0;
+    trenVrstaZadatka=aktivneVrsteZadataka[indeksVrsteZadatka];
 
+    if(trenVrstaZadatka==1) trenZadatak=ZadatakSabiranje();
+    else if(trenVrstaZadatka==2) trenZadatak=ZadatakOduzimanje();
+    else if(trenVrstaZadatka==3) trenZadatak=ZadatakMnozenje();
+    else if(trenVrstaZadatka==4) trenZadatak=ZadatakDeljenje();
+    else if(trenVrstaZadatka==5) trenZadatak=ZadatakNepSabirak();
+    else if(trenVrstaZadatka==6) trenZadatak=ZadatakNepUmanjenik();
+    else if(trenVrstaZadatka==7) trenZadatak=ZadatakNepUmanjilac();
+    else if(trenVrstaZadatka==8) trenZadatak=ZadatakNepCinilac();
+    else if(trenVrstaZadatka==9) trenZadatak=ZadatakDeljenik();
+    else if(trenVrstaZadatka==10) trenZadatak=ZadatakDelilac();
+    
     document.getElementById('TekstZadatka').innerHTML=trenZadatak.tekstZadatka;
     document.getElementById('Izraz').innerHTML=trenZadatak.izraz;
     document.getElementById('TrazenaPromenjiva').innerHTML=trenZadatak.trazenaPromenljiva;
