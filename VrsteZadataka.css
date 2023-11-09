@@ -1,0 +1,60 @@
+
+.Imena{
+    width: 100%;
+}
+.Dugme:hover{
+    background-color:#d3d5d8 ;
+}
+.Dugme:active{
+    background-color: rgba(136, 186, 193, 0.40);
+}
+
+
+
+.Kartica0 {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0.5rem 0.5rem 0.5rem 2rem ;
+    background-color: #BCD7EF;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+#UkupnoValue{ font-size: 1.25rem;margin-top: 0.2rem;}
+.Kartica1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 1rem 0.4rem 2rem ;
+    margin: 0.3rem 0 0.3rem 0;
+}
+.Kartica1 .VrstaZadatka{
+     font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+.ZadatakValue{
+   font-size: 1rem;
+}
+.Kartica2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 1rem 0.4rem 3rem ;
+    margin: 0.3rem 0 0.3rem 0;
+    
+}
+.Kartica2 .VrstaZadatka{
+    font-size: 0.8rem;
+}
+
+
+.Oblast{
+    margin:0.5rem 0 0.5rem 0;
+}
+.LineBreak{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, #D9D9D9 100%);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    
+}
