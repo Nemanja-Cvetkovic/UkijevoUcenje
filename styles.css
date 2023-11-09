@@ -44,7 +44,13 @@ body {
     margin: 0.5rem;
     
 }
-
+#SlikeTutorijala{
+    margin:1rem 0 0 1rem;
+}
+#OpisTutorijala{
+    font-size: 0.6rem;
+    margin-right: 1rem;
+}
 .ZadatakPanel{
     margin: 5px 0 5px 0;
     width: 100%;
