@@ -2,7 +2,6 @@
 span, p, li, h1, h2{
  font-family: 'Montserrat', sans-serif;  
 }
-
 body {
     overflow: hidden;
     margin: 0;
@@ -18,11 +17,14 @@ body {
 }
 .VrsteZadataka{
     background-color: #E8E9EB;
-    width: 378px;
+    /*width: 378px;*/
+    width: 24%;
+    min-width: 135px;
     height: 100%;
 }
 .RadniProstor{
     background-color: #CCCDC6;
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -117,3 +119,56 @@ body {
 
 }
 
+@media screen and (max-width:600px){
+    #TekstZadatka{
+        margin-top: 0.25rem;
+        padding-bottom: 0.75rem;
+    }
+    #Izraz{
+        padding-top: 1rem;
+        margin-left: 1rem;
+    }
+    #TrazenaPromenjiva {
+        margin-left: 1rem;
+      }
+    .Unos{
+        font-size: 1.1rem;
+    }
+    .Unos input {
+        width: 5rem;
+        height: 1.5rem;
+        font-size: 1.1rem;
+        font-family: Montserrat, sans-serif;
+      }
+      /*ISTORIJA...........*/
+      .IstorijskiZapis {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0.6rem;
+        background-color: #95BD96;
+        text-align: center;
+      }
+
+      .IstorijskiZapis #IstorijaUnosDiv {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .IstorijskiZapis #IstorijaIzraz {
+        margin-left: 1rem;
+        align-self: center;
+        min-width: 40%;
+      }
+      .IstorijskiZapis input {
+        width: 5rem;
+        height: 1.25rem;
+        font-size: 1.2rem;
+        font-family: Montserrat, sans-serif;
+        border-radius: 3px;
+        background-color: #C4C6CA;
+        margin: 0;
+        padding-left: 0.2rem;
+      }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image" href="/assets/favicon.png">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./VrsteZadataka.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vežbanje</title>
+</head>
+<body>
+    <div class="CelaStranica">
+        <div class="VrsteZadataka">    
+        <div class="Kartica0">
+            <span>Ukupno</span>
+            <span id="UkupnoValue">dfgdfg</span>
+        </div>
+        <div class="Kartica1 Dugme" onclick="PromeniTutorijal('1')">
+            <span class="VrstaZadatka">Sabiranje</span>
+            <span class="ZadatakValue" id="Task1Value"></span>
+        </div>
+        <div class="Kartica1 Dugme" onclick="PromeniTutorijal('2')">
+            <span class="VrstaZadatka">Oduzimanje</span>
+            <span class="ZadatakValue" id="Task2Value">0</span>
+        </div>
+        <div class="Kartica1 Dugme" onclick="PromeniTutorijal('3')">
+            <span class="VrstaZadatka">Množenje</span>
+            <span class="ZadatakValue" id="Task3Value">0</span>
+        </div>
+        <div class="Kartica1 Dugme" onclick="PromeniTutorijal('4')">
+            <span class="VrstaZadatka">Deljenje</span>
+            <span class="ZadatakValue" id="Task4Value">0</span>
+        </div>
+        <div class="LineBreak"></div>
+        <div class="Kartica1">
+            <span class="Oblast">Jednačine sa jednom promenljivom</span>
+            
+           
+        </div>
+        <div class="Kartica2 Dugme" onclick="PromeniTutorijal('5')">
+            <span class="VrstaZadatka">Nepoznati sabirak</span>
+            <span class="ZadatakValue" id="Task5Value">0</span>
+        </div>
+        <div class="Kartica2 Dugme "  onclick="PromeniTutorijal('6')">
+            <span class="VrstaZadatka">Nepoznati umanjenik</span>
+            <span class="ZadatakValue" id="Task6Value">0</span>
+        </div>
+        <div class="Kartica2 Dugme" onclick="PromeniTutorijal('7')">
+            <span class="VrstaZadatka">Nepoznati umanjilac</span>
+            <span class="ZadatakValue" id="Task7Value">0</span>
+        </div>
+        <div class="Kartica2 Dugme" onclick="PromeniTutorijal('8')">
+            <span class="VrstaZadatka">Nepoznati činilac</span>
+            <span class="ZadatakValue" id="Task8Value">0</span>
+        </div>
+        <div class="Kartica2 Dugme" onclick="PromeniTutorijal('9')">
+            <span class="VrstaZadatka">Nepoznati deljenik</span>
+            <span class="ZadatakValue" id="Task9Value">0</span>
+        </div>
+        <div class="Kartica2 Dugme" onclick="PromeniTutorijal('10')">
+            <span class="VrstaZadatka">Nepoznati delilac</span>
+            <span class="ZadatakValue" id="Task10Value">0</span>
+        </div>
+        <div class="LineBreak"></div>
+            
+        
+        </div>
+        <div class="RadniProstor">                
+            <div class="TutorijalPanel">
+                <h2 id="NazivTutorijala"></h2>
+                <h2 id="NazivTutorijala2"></h2>
+            </div>
+            <div class="ZadatakPanel">
+                <div class="Postavka">
+                    <p id="TekstZadatka">Rešiti jednačinu:</p>
+                    <span id="Izraz">35+X=89</span>
+                </div>
+
+                <div class="Unos">
+                    <span id="TrazenaPromenjiva">X=</span>
+                    <input type="text" id="UnosTextBox" value="">
+                </div>
+                
+            </div>
+            <div class="IstorijaPanel">
+                <div class="IstorijskiZapis" id="IstorijskiZapis1" style="visibility: hidden;">
+                    <span id="IstorijaIzraz">1</span>
+                    <div id="IstorijaUnosDiv" >
+                        <span id="IstorijaTrazenaPromenljiva">X1=</span>
+                        <input id="IstorijaUnos" type="text" value="1">
+                    </div>                    
+                </div>
+                <div class="IstorijskiZapis" id="IstorijskiZapis2" style="visibility: hidden;">
+                    <span id="IstorijaIzraz">2</span>
+                    <div id="IstorijaUnosDiv" >
+                        <span id="IstorijaTrazenaPromenljiva">X2=</span>
+                        <input id="IstorijaUnos" type="text" value="2">
+                    </div>                    
+                </div>                     
+                <div class="IstorijskiZapis" id="IstorijskiZapis3" style="visibility: hidden;">
+                    <span id="IstorijaIzraz">3+.....................................X=16</span>
+                    <div id="IstorijaUnosDiv" >
+                        <span id="IstorijaTrazenaPromenljiva">X3=</span>
+                        <input id="IstorijaUnos" type="text" value="3">
+                    </div>                    
+                </div>                     
+                <div class="IstorijskiZapis" id="IstorijskiZapis4" style="visibility: hidden;">
+                    <span id="IstorijaIzraz">4+.....................................X=16</span>
+                    <div id="IstorijaUnosDiv" >
+                        <span id="IstorijaTrazenaPromenljiva">X4=</span>
+                        <input id="IstorijaUnos" type="text" value="4">
+                    </div>                    
+                </div>                     
+                <div class="IstorijskiZapis" id="IstorijskiZapis5" style="visibility: hidden;">
+                    <span id="IstorijaIzraz">5+.....................................X=16</span>
+                    <div id="IstorijaUnosDiv" >
+                        <span id="IstorijaTrazenaPromenljiva">X5=</span>
+                        <input id="IstorijaUnos" type="text" value="5">
+                    </div>                    
+                </div>                                          
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="Tutorijal.js"></script>    
+    <script src="Zadatak.js"></script>        
+</body>
+</html>
