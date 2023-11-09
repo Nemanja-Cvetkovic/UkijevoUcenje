@@ -21,11 +21,11 @@ var  trenZadatak=new Zadatak();
 window.onload=GenerisiZadatak();
 document.getElementById('UnosTextBox').focus();
 
-document.getElementById('UnosTextBox').onblur = function () {
+/*document.getElementById('UnosTextBox').onblur = function () {
     setTimeout(function () {
         document.getElementById('UnosTextBox').focus();
     });
-};
+};*/
 
 document.addEventListener('keydown', function(event){
     if(event.keyCode == 13 )Provera();
